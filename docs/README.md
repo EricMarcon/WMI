@@ -20,7 +20,7 @@ Comparing the panels is a quick and efficient way to debug the wrapper.
 The installers will download .NET Framework 4.7 if needed.
 
 
-##Background
+## Background
 
 The base class is `WMIobject`. It does not exist in native WMI, but is used to provide general methods, mainly used to convert WMI types to .NET types and implement WMI methods. 
 Other classes inherit from it, following the WMI architecture. 
