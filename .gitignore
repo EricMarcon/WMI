@@ -259,3 +259,10 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+
+# WMI, Advanced Installer
+*.syn
+WMI-cache/
+WMI.x64-cache/
+*.back.aip
+Release/
