@@ -15,9 +15,7 @@ Comparing the panels is a quick and efficient way to debug the wrapper.
 
 ## Download binaries
 
-- [x64](https://github.com/EricMarcon/WMI/releases/download/2.5/64-bit.executable.installer.exe): For any x64 version of Windows > XP SP3. Recommended.
-
-- [x86](https://github.com/EricMarcon/WMI/releases/download/2.5/32-bit.executable.installer.exe): for any version of Windows > XP SP3.
+- [x64](https://github.com/EricMarcon/WMI/releases/download/1.0/WMI.exe): For any x64 version of Windows > XP SP3.
 
 The installers will download .NET Framework 4.7 if needed.
 
