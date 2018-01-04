@@ -1,0 +1,44 @@
+﻿<project schemaVersion="1.4.0.2">
+    <assemblies>
+        <assembly assemblyPath=".\WMIwrapper\bin\Release\WMIwrapper.dll" xmlCommentsPath=".\WMIwrapper\bin\Release\WMIwrapper.xml" commentsOnly="False" />
+    </assemblies>
+    <namespaceSummaries>
+        <namespaceSummaryItem name="" isDocumented="False" />
+        <namespaceSummaryItem name="WMIwrapper" isDocumented="True">WMI wrapper. Provides .NET classes for WMI.</namespaceSummaryItem>
+        <namespaceSummaryItem name="WMIwrapper.Enums" isDocumented="True">Enums for WMI wrapper.</namespaceSummaryItem>
+        <namespaceSummaryItem name="WMIwrapper.My" isDocumented="False" />
+        <namespaceSummaryItem name="WMIwrapper.My.Resources" isDocumented="False" />
+    </namespaceSummaries>
+    <ProjectSummary>A WMI wrapper.</ProjectSummary>
+    <MissingTags>Namespace</MissingTags>
+    <VisibleItems>InheritedMembers, Privates, Protected, SealedProtected, PrivateFields</VisibleItems>
+    <HtmlHelp1xCompilerPath path="" />
+    <HtmlHelp2xCompilerPath path="" />
+    <OutputPath>.\ComputerManager\</OutputPath>
+    <SandcastlePath path="C:\Program Files (x86)\Sandcastle\" />
+    <WorkingPath path="" />
+    <CleanIntermediates>True</CleanIntermediates>
+    <HelpFileFormat>HtmlHelp1x</HelpFileFormat>
+    <PurgeDuplicateTopics>True</PurgeDuplicateTopics>
+    <CppCommentsFixup>False</CppCommentsFixup>
+    <FrameworkVersion>2.0.50727</FrameworkVersion>
+    <BinaryTOC>True</BinaryTOC>
+    <IncludeFavorites>False</IncludeFavorites>
+    <Preliminary>False</Preliminary>
+    <RootNamespaceContainer>False</RootNamespaceContainer>
+    <RootNamespaceTitle />
+    <HelpTitle>WMI Wrapper Documentation</HelpTitle>
+    <HtmlHelpName>Documentation</HtmlHelpName>
+    <Language>en-US</Language>
+    <CopyrightHref>http://e.marcon.free.fr/WMI</CopyrightHref>
+    <CopyrightText>Eric Marcon</CopyrightText>
+    <FeedbackEMailAddress>e.marcon@free.fr</FeedbackEMailAddress>
+    <HeaderText />
+    <FooterText />
+    <ProjectLinkType>Local</ProjectLinkType>
+    <SdkLinkType>Msdn</SdkLinkType>
+    <PresentationStyle>vs2005</PresentationStyle>
+    <NamingMethod>Guid</NamingMethod>
+    <SyntaxFilters>Standard</SyntaxFilters>
+    <ContentPlacement>AboveNamespaces</ContentPlacement>
+</project>

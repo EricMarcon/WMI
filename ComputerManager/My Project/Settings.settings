@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="FileSharePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Folder</Value>
+    </Setting>
+    <Setting Name="FileShareName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ShareName</Value>
+    </Setting>
+    <Setting Name="FileShareDescription" Type="System.String" Scope="User">
+      <Value Profile="(Default)">File Share Description</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

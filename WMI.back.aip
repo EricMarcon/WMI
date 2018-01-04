@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT type="Advanced Installer" CreateVersion="5.2.2" version="5.2.2" modules="enterprise" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_MINDOTNETVERSION" Value="2.0"/>
+    <ROW Property="ALLUSERS" Value="2"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPURLINFOABOUT" Value="e.marcon.free.fr/WMI"/>
+    <ROW Property="BannerBitmap" Value="style16_banner.jpg" Type="1"/>
+    <ROW Property="DialogBitmap" Value="style16_dialog.jpg" Type="1"/>
+    <ROW Property="Manufacturer" Value="Eric Marcon" ValueLocId="*"/>
+    <ROW Property="ProductCode" Value="1033:{36A380AC-94CC-4C6E-B420-FEE9C9476E92} "/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Computer Manager" ValueLocId="*"/>
+    <ROW Property="ProductVersion" Value="1.0.2826"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{7C7F6244-B2F6-4474-9A9E-A64C5DEB499B}"/>
+    <ROW Property="WindowsType9X" Value="Windows 98 SE"/>
+    <ROW Property="WindowsTypeNT" Value="Windows 2000 Service Pack 4"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="Documentation.chm" ComponentId="{C4EC21B1-1633-4980-8AE6-0009ACCC35FB}" Directory_="APPDIR" Attributes="0" KeyPath="Documentation.chm" FullKeyPath="APPDIR\Documentation.chm"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{DA718816-06EA-4B5F-B6D3-CC4CE00BFD64}" Directory_="SHORTCUTDIR" Attributes="0"/>
+    <ROW Component="WMI.exe" ComponentId="{73F01E76-0C9E-4789-9B2E-6F01AD63B9BC}" Directory_="APPDIR" Attributes="0" KeyPath="WMI.exe" FullKeyPath="APPDIR\WMI.exe"/>
+    <ROW Component="WMI.exe.config" ComponentId="{B4E2BDB1-4FBB-494C-982F-F92F4EFB368D}" Directory_="APPDIR" Attributes="0" KeyPath="WMI.exe.config" FullKeyPath="APPDIR"/>
+    <ROW Component="WMIwrapper.dll" ComponentId="{99A1BAEC-4403-4CEB-943E-8BC78E0496FA}" Directory_="APPDIR" Attributes="0" KeyPath="WMIwrapper.dll" FullKeyPath="APPDIR\WMIwrapper.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="Documentation.chm WMI.exe WMI.exe.config WMIwrapper.dll SHORTCUTDIR"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="Documentation.chm" Component_="Documentation.chm" FileName="Docume~1.chm|Documentation.chm" Attributes="0" SourcePath="ComputerManager\bin\x64\Release\Documentation.chm" SelfReg="false" Sequence="1"/>
+    <ROW File="WMI.exe" Component_="WMI.exe" FileName="WMI.exe" Attributes="0" SourcePath="ComputerManager\bin\x64\Release\WMI.exe" SelfReg="false" Sequence="2"/>
+    <ROW File="WMI.exe.config" Component_="WMI.exe.config" FileName="WMIexe~1.con|WMI.exe.config" Attributes="0" SourcePath="ComputerManager\bin\x64\Release\WMI.exe.config" SelfReg="false" Sequence="3"/>
+    <ROW File="WMIwrapper.dll" Component_="WMIwrapper.dll" FileName="WMIwra~1.dll|WMIwrapper.dll" Attributes="0" SourcePath="ComputerManager\bin\x64\Release\WMIwrapper.dll" SelfReg="false" Sequence="4"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildName="DefaultBuild" BuildOrder="1" BuildType="1" PackageName="ComputerManager" InstallationType="4"/>
+    <ATTRIBUTE name="CurrentBuild" value="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;ui.ail&gt;"/>
+    <ROW Path="&lt;ui_en.ail&gt;"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="FolderDlg.aip" Path="&lt;FolderDlg.aip&gt;"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;StaticUIStrings.aip&gt;"/>
+    <ROW Fragment="UI.aip" Path="&lt;UI.aip&gt;"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiAppSearchComponent">
+    <ROW Property="AI_DOTNET10_SEARCH" Signature_="AI_DotNet10SearchSgn"/>
+    <ROW Property="AI_DOTNET11_SEARCH" Signature_="AI_DotNet11SearchSgn"/>
+    <ROW Property="AI_DOTNET20_SEARCH" Signature_="AI_DotNet20SearchSgn"/>
+    <ROW Property="AI_DOTNET30_SEARCH" Signature_="AI_DotNet30SearchSgn"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;aicustact.dll&gt;"/>
+    <ROW Name="style16_banner.jpg" SourcePath="&lt;style16_banner.jpg&gt;"/>
+    <ROW Name="style16_dialog.jpg" SourcePath="&lt;style16_dialog.jpg&gt;"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ATTRIBUTE name="FixedSizeBitmaps" value="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="3"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="2"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="3"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="1" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="1" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="740"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="Not Installed" Sequence="1545"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1300"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="740"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="(AI_DOTNET20_SEARCH = &quot;#1&quot;) OR (AI_DOTNET30_SEARCH = &quot;#1&quot;)" Description="[ProductName] can not be installed on systems with .NET Framework version smaller than [AI_MINDOTNETVERSION]" DescriptionLocId="AI.LaunchCondition.DotNET"/>
+    <ROW Condition="Version9X OR VersionNT64 OR ((VersionNT &gt; 500) OR ((VersionNT = 500) AND (ServicePackLevel &gt;= 4)))" Description="[ProductName] can not be installed on systems earlier than [WindowsTypeNT]"/>
+    <ROW Condition="VersionNT OR ((Version9X &gt;= 410) AND (WindowsBuild &gt;= 2222))" Description="[ProductName] can not be installed on systems earlier than [WindowsType9X]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegLocatorComponent">
+    <ROW Signature_="AI_DotNet10SearchSgn" Root="2" Key="SOFTWARE\Microsoft\.NETFramework\policy\v1.0" Name="3705" Type="2"/>
+    <ROW Signature_="AI_DotNet11SearchSgn" Root="2" Key="SOFTWARE\Microsoft\NET Framework Setup\NDP\v1.1.4322" Name="Install" Type="2"/>
+    <ROW Signature_="AI_DotNet20SearchSgn" Root="2" Key="SOFTWARE\Microsoft\NET Framework Setup\NDP\v2.0.50727" Name="Install" Type="2"/>
+    <ROW Signature_="AI_DotNet30SearchSgn" Root="2" Key="SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.0\Setup" Name="InstallSuccess" Type="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="WMI.exe" Directory_="SHORTCUTDIR" Name="Comput~1|Computer Manager" Component_="WMI.exe" Target="[#WMI.exe]" Description="WMI Wrapper proof of concept." Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR" Advertised="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMax="[|ProductVersion]" Attributes="1025" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SynchronizedFolderComponent">
+    <ROW Directory_="APPDIR" SourcePath="ComputerManager\bin\x64\Release" ExcludePattern="*~|#*#|%*%|._|CVS|.cvsignore|SCCS|vssver.scc|mssccprj.scc|vssver2.scc|.svn|.DS_Store|*.pdb|*.xml" ExcludeFlags="6"/>
+  </COMPONENT>
+</DOCUMENT>

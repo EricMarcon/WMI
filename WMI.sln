@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WMIwrapper", "WMIwrapper\WMIwrapper.vbproj", "{A3C1580F-6EF5-41DC-924D-0411B47B52B1}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ComputerManager", "ComputerManager\ComputerManager.vbproj", "{0B0B6191-2BC3-4A6A-A723-6D299D3FB6D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3C1580F-6EF5-41DC-924D-0411B47B52B1}.Debug|x64.ActiveCfg = Debug|x64
+		{A3C1580F-6EF5-41DC-924D-0411B47B52B1}.Debug|x64.Build.0 = Debug|x64
+		{A3C1580F-6EF5-41DC-924D-0411B47B52B1}.Debug|x86.ActiveCfg = Debug|x86
+		{A3C1580F-6EF5-41DC-924D-0411B47B52B1}.Debug|x86.Build.0 = Debug|x86
+		{A3C1580F-6EF5-41DC-924D-0411B47B52B1}.Release|x64.ActiveCfg = Release|x64
+		{A3C1580F-6EF5-41DC-924D-0411B47B52B1}.Release|x64.Build.0 = Release|x64
+		{A3C1580F-6EF5-41DC-924D-0411B47B52B1}.Release|x86.ActiveCfg = Release|x86
+		{A3C1580F-6EF5-41DC-924D-0411B47B52B1}.Release|x86.Build.0 = Release|x86
+		{0B0B6191-2BC3-4A6A-A723-6D299D3FB6D1}.Debug|x64.ActiveCfg = Debug|x64
+		{0B0B6191-2BC3-4A6A-A723-6D299D3FB6D1}.Debug|x64.Build.0 = Debug|x64
+		{0B0B6191-2BC3-4A6A-A723-6D299D3FB6D1}.Debug|x86.ActiveCfg = Debug|x86
+		{0B0B6191-2BC3-4A6A-A723-6D299D3FB6D1}.Debug|x86.Build.0 = Debug|x86
+		{0B0B6191-2BC3-4A6A-A723-6D299D3FB6D1}.Release|x64.ActiveCfg = Release|x64
+		{0B0B6191-2BC3-4A6A-A723-6D299D3FB6D1}.Release|x64.Build.0 = Release|x64
+		{0B0B6191-2BC3-4A6A-A723-6D299D3FB6D1}.Release|x86.ActiveCfg = Release|x86
+		{0B0B6191-2BC3-4A6A-A723-6D299D3FB6D1}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(VaultVsipSolution-v2) = preSolution
+		VaultHost = http://localhost/VaultService
+		VaultRepositoryID = 2
+		VaultRepositoryGUID = 54204b2a-bb51-4417-9ce5-8c1b874b02a9
+		ProjectCount = 2
+		ProjectRelativeDiskPath1 = ComputerManager\ComputerManager.vbproj
+		ProjectRelativeDiskPath2 = WMIwrapper\WMIwrapper.vbproj
+	EndGlobalSection
+EndGlobal

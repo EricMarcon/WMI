@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A3C1580F-6EF5-41DC-924D-0411B47B52B1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>WMIwrapper</RootNamespace>
+    <AssemblyName>WMIwrapper</AssemblyName>
+    <MyType>Windows</MyType>
+    <OptionCompare>Text</OptionCompare>
+    <OptionStrict>On</OptionStrict>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <SccProjectName>WMIwrapper</SccProjectName>
+    <SccLocalPath>2~89a8e7b6-49e4-4126-915a-bdb2fc7c3ebe</SccLocalPath>
+    <SccAuxPath>http://localhost/VaultService</SccAuxPath>
+    <SccProvider>SourceGear Vault Visual Studio 2005 Client:{1EA47954-8515-402d-82D9-B5C332120A8D}</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>WMIwrapper.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>WMIwrapper.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>WMIwrapper.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>WMIwrapper.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>WMIwrapper.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>WMIwrapper.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Management" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Component\CIM_Container.vb" />
+    <Compile Include="Component\Win32_PhysicalMemoryLocation.vb" />
+    <Compile Include="Dependencies\CIM_DeviceAccessedByFile.vb" />
+    <Compile Include="Logical Elements\Accounts\Win32_SystemAccount.vb" />
+    <Compile Include="Logical Elements\Accounts\Win32_Group.vb" />
+    <Compile Include="Logical Elements\Accounts\Win32_UserAccount.vb" />
+    <Compile Include="Logical Elements\Accounts\Win32_Account.vb" />
+    <Compile Include="Logical Elements\Logical Devices\Media\Win32_DefragAnalysis.vb" />
+    <Compile Include="Logical Elements\Logical Devices\Media\CIM_StorageVolume.vb" />
+    <Compile Include="Logical Elements\Logical Devices\Media\Win32_Volume.vb" />
+    <Compile Include="Logical Elements\LogicalFiles\CIM_LogicalFile.vb" />
+    <Compile Include="Logical Elements\LogicalFiles\CIM_Directory.vb" />
+    <Compile Include="Logical Elements\LogicalFiles\CIM_DataFile.vb" />
+    <Compile Include="Logical Elements\LogicalFiles\CIM_DeviceFile.vb" />
+    <Compile Include="Logical Elements\LogicalFiles\Win32_PageFile.vb" />
+    <Compile Include="Logical Elements\LogicalFiles\Win32_NTEventlogFile.vb" />
+    <Compile Include="Logical Elements\LogicalFiles\Win32_CodecFile.vb" />
+    <Compile Include="Logical Elements\LogicalFiles\Win32_ShortcutFile.vb" />
+    <Compile Include="Logical Elements\LogicalFiles\Win32_Directory.vb" />
+    <Compile Include="Win32_MountPoint.vb" />
+    <Compile Include="PhysicalElements\PhysicalPackages\CIM_Card.vb" />
+    <Compile Include="Computer.vb" />
+    <Compile Include="CIM_Location.vb" />
+    <Compile Include="Dependencies\CIM_Dependency.vb" />
+    <Compile Include="Element Settings\CIM_ElementSetting.vb" />
+    <Compile Include="Element Settings\Win32_DeviceSetting.vb" />
+    <Compile Include="Logical Elements\CIM_LogicalElement.vb" />
+    <Compile Include="Logical Elements\Logical Devices\Batttery\CIM_Battery.vb" />
+    <Compile Include="Logical Elements\Logical Devices\Controller\CIM_Controller.vb" />
+    <Compile Include="Logical Elements\Logical Devices\Controller\CIM_VideoController.vb" />
+    <Compile Include="Logical Elements\Logical Devices\Controller\CIM_PCVideoController.vb" />
+    <Compile Include="Logical Elements\Logical Devices\Controller\Win32_VideoController.vb" />
+    <Compile Include="Logical Elements\Logical Devices\Network\CIM_NetworkAdapter.vb" />
+    <Compile Include="Logical Elements\Logical Devices\Processor\CIM_Processor.vb" />
+    <Compile Include="Logical Elements\Logical Devices\Refrigeration\CIM_Refrigeration.vb" />
+    <Compile Include="Logical Elements\Logical Devices\Refrigeration\CIM_CoolingDevice.vb" />
+    <Compile Include="Logical Elements\Logical Devices\User device\CIM_UserDevice.vb" />
+    <Compile Include="Logical Elements\Logical Devices\User device\CIM_Keyboard.vb" />
+    <Compile Include="Logical Elements\Logical Devices\User device\CIM_PointingDevice.vb" />
+    <Compile Include="Logical Elements\Logical Devices\User device\CIM_Display.vb" />
+    <Compile Include="Logical Elements\Logical Devices\User device\CIM_DesktopMonitor.vb" />
+    <Compile Include="Logical Elements\Logical Devices\User device\Win32_DesktopMonitor.vb" />
+    <Compile Include="Logical Elements\Logical Devices\User device\Win32_PointingDevice.vb" />
+    <Compile Include="Dependencies\Win32_SystemDriverPNPEntity.vb" />
+    <Compile Include="Logical Elements\System\CIM_ComputerSystem.vb" />
+    <Compile Include="Logical Elements\Service\Win32_Service.vb" />
+    <Compile Include="PhysicalElements\PhysicalComponents\CIM_PhysicalComponent.vb" />
+    <Compile Include="Logical Elements\System\CIM_System.vb" />
+    <Compile Include="PhysicalElements\PhysicalComponents\PhysicalMedia\CIM_PhysicalMedia.vb" />
+    <Compile Include="Component\CIM_PackagedComponent.vb" />
+    <Compile Include="PhysicalElements\PhysicalPackages\CIM_PhysicalPackage.vb" />
+    <Compile Include="PhysicalElements\Memory\CIM_Chip.vb" />
+    <Compile Include="PhysicalElements\Memory\CIM_PhysicalMemory.vb" />
+    <Compile Include="PhysicalElements\PhysicalPackages\Win32_BaseBoard.vb" />
+    <Compile Include="PhysicalElements\PhysicalPackages\Win32_PhysicalMemoryArray.vb" />
+    <Compile Include="PhysicalElements\Memory\Win32_PhysicalMemory.vb" />
+    <Compile Include="Component\CIM_Component.vb" />
+    <Compile Include="PhysicalElements\PhysicalComponents\PhysicalMedia\Win32_OnBoardDevice.vb" />
+    <Compile Include="Logical Elements\Service\Win32_PnPSignedDriver.vb" />
+    <Compile Include="Logical Elements\Service\CIM_Service.vb" />
+    <Compile Include="Logical Elements\System\CIM_UnitaryComputerSystem.vb" />
+    <Compile Include="Logical Elements\System\Win32_ComputerSystem.vb" />
+    <Compile Include="Logical Elements\Service\Win32_BaseService.vb" />
+    <Compile Include="Logical Elements\Service\Win32_SystemDriver.vb" />
+    <Compile Include="Settings\CIM_Setting.vb" />
+    <Compile Include="Logical Elements\Logical Devices\Refrigeration\Win32_Refrigeration.vb" />
+    <Compile Include="Logical Elements\Logical Devices\Media\Win32_CDROMDrive.vb" />
+    <Compile Include="Element Settings\Win32_NetworkAdapterSetting.vb" />
+    <Compile Include="Logical Elements\PnP\Win32_PnPDevice .vb" />
+    <Compile Include="Logical Elements\PnP\Win32_PnPEntity.vb" />
+    <Compile Include="PhysicalElements\CIM_PhysicalElement.vb" />
+    <Compile Include="CIM_ManagedSystemElement.vb" />
+    <Compile Include="PhysicalElements\PhysicalComponents\PhysicalMedia\Win32_PhysicalMedia.vb" />
+    <Compile Include="Logical Elements\Logical Devices\Batttery\Win32_Battery.vb" />
+    <Compile Include="Logical Elements\Logical Devices\Media\Win32_FloppyDrive.vb" />
+    <Compile Include="Logical Elements\Logical Devices\Media\Win32_DiskDrive.vb" />
+    <Compile Include="Logical Elements\Logical Devices\Media\Win32_DiskDrivePhysicalMedia.vb" />
+    <Compile Include="Settings\CIM_VideoControllerResolution.vb" />
+    <Compile Include="Settings\Win32_LogicalFileSecuritySetting.vb" />
+    <Compile Include="Settings\Win32_SecuritySetting.vb" />
+    <Compile Include="Settings\Win32_DisplayConfiguration.vb" />
+    <Compile Include="Settings\Win32_NetworkAdapterConfiguration.vb" />
+    <Compile Include="Logical Elements\Logical Devices\User device\Win32_Keyboard.vb" />
+    <Compile Include="Logical Elements\Logical Devices\Network\Win32_NetworkAdapter.vb" />
+    <Compile Include="Logical Elements\Logical Devices\Processor\Win32_Processor.vb" />
+    <Compile Include="Logical Elements\Logical Devices\CIM_LogicalDevice.vb" />
+    <Compile Include="Logical Elements\Logical Devices\Media\CIM_MediaAccessDevice.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Logical Elements\Logical Devices\Media\CIM_StorageExtent.vb" />
+    <Compile Include="Logical Elements\Logical Devices\Media\Win32_LogicalDisk.vb" />
+    <Compile Include="Logical Elements\Operating System\Win32_OperatingSystem.vb" />
+    <Compile Include="Logical Elements\Operating System\CIM_OperatingSystem.vb" />
+    <Compile Include="Settings\Win32_LogicalShareSecuritySetting.vb" />
+    <Compile Include="Security Objects\Win32_ACE.vb" />
+    <Compile Include="Security Objects\Win32_SecurityDescriptor.vb" />
+    <Compile Include="Logical Elements\Win32_Share.vb">
+    </Compile>
+    <Compile Include="Security Objects\Win32_Trustee.vb" />
+    <Compile Include="WMIbase.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
